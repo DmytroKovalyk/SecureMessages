@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="profile" extends="defaultTemplate">
+		<put-attribute name="title" value="Profile" />
+	    <put-attribute name="body"	value="/WEB-INF/views/user/profile.jsp" />
+	</definition>
+	
+	<definition name="friends" extends="defaultTemplate">
+		<put-attribute name="title" value="Friends" />
+	    <put-attribute name="body"	value="/WEB-INF/views/user/contacts.jsp" />
+	</definition>
+	
+	<definition name="following" extends="defaultTemplate">
+		<put-attribute name="title" value="Following" />
+	    <put-attribute name="body"	value="/WEB-INF/views/user/contacts.jsp" />
+	</definition>
+	
+	<definition name="follower" extends="defaultTemplate">
+		<put-attribute name="title" value="Follower" />
+	    <put-attribute name="body"	value="/WEB-INF/views/user/contacts.jsp" />
+	</definition>
+	
+	<definition name="messages" extends="defaultTemplate">
+		<put-attribute name="title" value="My Messages" />
+	    <put-attribute name="body"	value="/WEB-INF/views/user/messages.jsp" />
+	</definition>
+	
+	<definition name="search" extends="defaultTemplate">
+		<put-attribute name="title" value="Search" />
+	    <put-attribute name="body"	value="/WEB-INF/views/user/contacts.jsp" />
+	</definition>
+	
+	<definition name="login" extends="emptyTemplate">
+		<put-attribute name="title-name" value="Authentication" />
+		<put-attribute name="content"	value="/WEB-INF/views/public/login.jsp" />
+	</definition>
+	
+	<definition name="authorization" extends="emptyTemplate">
+		<put-attribute name="title-name" value="Authorization" />
+		<put-attribute name="content"	value="/WEB-INF/views/public/registration.jsp" />
+	</definition>
+	
+</tiles-definitions>
